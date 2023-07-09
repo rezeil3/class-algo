@@ -20,7 +20,6 @@ public class RandomWord {
         //Knuth's method using bernoulli as the randomizer
         for (int i = 0; i < n; i++) {
             double p = 1 / ((double) i + 1);
-            //Changes the winning word when returned true
             if (StdRandom.bernoulli(p)) {
                 champion = wordsArray[i];
             }
